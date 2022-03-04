@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-const db="mongodb+srv://cr7xxz:sahil@cluster0.z5tnv.mongodb.net/blog?retryWrites=true&w=majority"
+const db="mongodb+srv://user:pass@cluster0.z5tnv.mongodb.net/blog?retryWrites=true&w=majority"
 mongoose.connect(db,{
   useNewUrlParser: true,
   useCreateIndex: true,
